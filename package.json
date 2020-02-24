@@ -1,0 +1,30 @@
+{
+  "name": "dart-grader",
+  "version": "0.0.1",
+  "description": "Tool to automatically create MR for updating java/js dependencies",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "npm-check-updates": "^4.0.1",
+    "simple-git": "^1.131.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "grader": "node ./grader.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logart/dart-grader.git"
+  },
+  "keywords": [
+    "upgrade",
+    "dependency",
+    "check"
+  ],
+  "author": "Artem Loginov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/logart/dart-grader/issues"
+  },
+  "homepage": "https://github.com/logart/dart-grader#readme"
+}
