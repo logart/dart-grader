@@ -1,6 +1,5 @@
 FROM adoptopenjdk/openjdk11:jdk-11.0.6_10-alpine
 
-# RUN git clone https://gitlab.audienzz.ch/audienzz/audienzz.git
 RUN apk update && apk upgrade && \
     apk add --no-cache git nodejs npm
 
