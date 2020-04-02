@@ -7,7 +7,11 @@ RUN mkdir /grader
 WORKDIR /grader
 
 COPY node_modules node_modules
+COPY analizer.js analizer.js
+COPY git.js git.js
 COPY grader.js grader.js
+COPY gradle.js gradle.js
+COPY util.js util.js
 COPY package-lock.json package-lock.json
 COPY package.json package.json
 

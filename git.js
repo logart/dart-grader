@@ -12,7 +12,15 @@ const checkout = (projectDir, remote) => fs.stat(projectDir)
             return git().clone(remote);
         }
     })
-    .then(() => git(projectDir));
+    .then(() => git(projectDir))
+    .then(gitClient => {
+        gitClient.addConfig('user.name', 'Dart Grader');
+        return gitClient;
+    })
+    .then(gitClient => {
+        gitClient.addConfig('user.email', 'dart-grader@email.com');
+        return gitClient;
+    });
 
 const pull = (gitClient) => gitClient.checkout('.').then(() => gitClient.pull());
 
